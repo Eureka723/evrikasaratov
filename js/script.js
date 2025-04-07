@@ -1,3 +1,4 @@
 
-// Можно добавить анимации при прокрутке и прочее
-console.log("Evrika site loaded");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Сайт 'Эврика' загружен!");
+});

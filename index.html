@@ -1,137 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Детская школа «Эврика»</title>
-  <!-- Подключаем шрифт Montserrat -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" 
-    rel="stylesheet"
-  />
-  <!-- Подключаем стили -->
   <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Прелоадер -->
-  <div class="preloader">
-    <div class="spinner"></div>
-  </div>
-
-  <!-- Шапка с параллакс-эффектом -->
   <header class="header">
-    <div class="header-overlay"></div>
-    <img src="logo.png" alt="Логотип Эврика" class="logo" />
-    <h1>Детская школа «Эврика»</h1>
-    <!-- Декоративное изображение слева -->
-    <img src="images/side-left.png" alt="" class="side-image side-left" />
-    <!-- Декоративное изображение справа -->
-    <img src="images/side-right.png" alt="" class="side-image side-right" />
+    <div class="logo-block">
+      <img src="images/logo.png" alt="Логотип Эврика" class="logo" />
+      <h1>Частная школа «Эврика»</h1>
+    </div>
+    <p class="subtitle">Инвестиция в будущее вашего ребенка</p>
   </header>
 
   <main>
-    <!-- О школе -->
-    <section class="about section fade-in">
-      <div class="content-wrapper">
-        <div class="text-block slide-in-left">
-          <h2>Инвестиция в будущее вашего ребенка</h2>
-          <p>
-            Уже 6 лет мы создаём идеальные условия для развития детей. Мы знаем подводные камни традиционного обучения и предлагаем только проверенные решения, дающие стабильный результат.
-          </p>
-          <p>
-            «Эврика» — выбор успешных родителей, которые хотят видеть своего ребенка счастливым, здоровым и уверенным в себе.
-          </p>
-        </div>
-        <div class="image-block slide-in-right">
-          <img src="images/kids_study.png" alt="Дети занимаются" />
-        </div>
+    <section class="about fade-in">
+      <div class="text-block">
+        <h2>О школе</h2>
+        <p>
+          Мы накопили 6 лет опыта, чтобы создавать идеальные условия для развития детей.
+          Мы знаем, как не стоит организовывать обучение, и предлагаем только проверенные решения.
+        </p>
       </div>
+      <img src="images/kids_study.png" alt="Дети занимаются" class="illustration" />
     </section>
 
-    <!-- Преимущества -->
-    <section class="benefits section fade-in">
-      <h2>Наши преимущества</h2>
-      <div class="content-wrapper">
-        <div class="text-block slide-in-left">
-          <ul>
-            <li>Небольшие классы и индивидуальный подход</li>
-            <li>Домашний уют и современное оборудование</li>
-            <li>Авторская программа обучения</li>
-            <li>Прозрачная система оценки знаний</li>
-            <li>Безопасность и строгие санитарные нормы</li>
-          </ul>
-        </div>
-        <div class="image-block slide-in-right">
-          <img src="images/teacher_kids.png" alt="Учитель и дети" />
-        </div>
-      </div>
+    <section class="benefits fade-in">
+      <h2>Почему «Эврика» — выбор успешных родителей?</h2>
+      <ul>
+        <li>Четкие критерии оценки, понятные каждому родителю</li>
+        <li>Домашние задания для эффективного усвоения знаний</li>
+        <li>Отсутствие непрошенных экспериментов</li>
+        <li>Соблюдение санитарных и противопожарных норм</li>
+        <li>Комфортное и развивающее пространство</li>
+      </ul>
     </section>
 
-    <!-- Наш комплексный подход -->
-    <section class="info-section section fade-in">
+    <section class="approach fade-in">
       <h2>Наш комплексный подход</h2>
-      <div class="info-cards">
-        <!-- Образование -->
-        <div class="info-card slide-in-up">
+      <div class="columns">
+        <div>
           <h3>Образование</h3>
           <ul>
-            <li>Классическая программа по стандартам РФ</li>
-            <li>Интенсивное изучение языка — 5 часов/неделю</li>
+            <li>Программа по стандартам РФ</li>
+            <li>5 часов иностранного языка в неделю</li>
             <li>Онлайн-занятия при пропусках</li>
-            <li>Блочно-модульная система: 5 недель занятий + проектная неделя</li>
+            <li>Проектная деятельность и культурные мероприятия</li>
           </ul>
         </div>
-        <!-- Здоровье -->
-        <div class="info-card slide-in-up">
+        <div>
           <h3>Здоровье</h3>
           <ul>
-            <li>Ежедневная 15-минутная зарядка</li>
-            <li>Физическая активность в течение дня</li>
-            <li>Уроки на английском для гармоничного развития</li>
+            <li>15 минут зарядки перед уроками</li>
+            <li>Физическая активность с уроками на английском</li>
           </ul>
         </div>
-        <!-- Экспертность -->
-        <div class="info-card slide-in-up">
+        <div>
           <h3>Экспертность</h3>
           <ul>
-            <li>Опытные педагоги с уникальными методиками</li>
-            <li>Доброжелательная атмосфера доверия и поддержки</li>
+            <li>Опытные педагоги с авторскими методиками</li>
+            <li>Атмосфера поддержки и доверия</li>
           </ul>
         </div>
-        <!-- Развитие личности -->
-        <div class="info-card slide-in-up">
+        <div>
           <h3>Развитие личности</h3>
           <ul>
-            <li>Формирование самостоятельности и ответственности</li>
-            <li>Воспитание инициативности и умения следовать правилам</li>
-            <li>Укрепление авторитета родителей и наставников</li>
+            <li>Навыки мышления и самостоятельности</li>
+            <li>Ответственность и инициативность</li>
+            <li>Авторитет родителей и наставников</li>
           </ul>
         </div>
       </div>
-      <p class="center-text">
-        Гибкая система оплаты с возможностью рассрочки. Выбирая «Эврика», вы даёте ребёнку уверенный старт и раскрываете его потенциал!
-      </p>
     </section>
 
-    <!-- Контакты -->
-    <section class="contact section fade-in">
+    <section class="contact fade-in">
       <h2>Свяжитесь с нами</h2>
-      <form action="https://formspree.io/f/movepnpj" method="POST" class="slide-in-up">
+      <form action="#" method="POST">
         <input type="text" name="name" placeholder="Имя" required />
         <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <textarea name="message" placeholder="Сообщение" required></textarea>
         <button type="submit">Отправить</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Школа «Эврика». Все права защищены.</p>
+    <p>© 2025 Школа «Эврика». Каждый день — новое открытие.</p>
   </footer>
-
-  <!-- Подключаем скрипты -->
-  <script src="js/script.js" defer></script>
 </body>
 </html>
