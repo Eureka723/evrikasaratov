@@ -1,15 +1,100 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Site</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Детская школа «ЭВРИКА»</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Добро пожаловать на мой сайт!</h1>
-  <p>Скоро здесь будет что-то интересное.</p>
-  <script src="script.js"></script>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#header" class="logo">ЭВРИКА</a>
+      <ul class="nav-links">
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="#approach">Подход</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="header-content">
+      <h1>Детская школа «ЭВРИКА»</h1>
+      <p>Инвестиция в будущее вашего ребенка</p>
+    </div>
+  </header>
+  <div class="container main-content">
+    <section id="advantages">
+      <h2>Почему «ЭВРИКА» — выбор успешных родителей?</h2>
+      <div class="benefits">
+        <div class="benefit-item">
+          <h3>Прозрачность и качество</h3>
+          <ul>
+            <li>Четкие критерии оценки для родителей</li>
+            <li>Домашние задания для лучшего усвоения знаний</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Безопасность и забота</h3>
+          <ul>
+            <li>Отсутствие ненужных экспериментов</li>
+            <li>Соблюдение санитарных норм</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="approach">
+      <h2>Наш комплексный подход</h2>
+      <div class="benefits">
+        <div class="benefit-item">
+          <h3>Образование</h3>
+          <ul>
+            <li>Классическая программа по стандартам РФ</li>
+            <li>5 часов иностранного языка в неделю</li>
+            <li>Онлайн-занятия в реальном времени</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Здоровье</h3>
+          <ul>
+            <li>Ежедневная зарядка перед занятиями</li>
+            <li>Физическая активность с уроками на английском</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Экспертность</h3>
+          <ul>
+            <li>Опытные педагоги с уникальными методиками</li>
+          </ul>
+        </div>
+        <div class="benefit-item">
+          <h3>Развитие личности</h3>
+          <ul>
+            <li>Формирование личности ребенка</li>
+            <li>Развитие навыков обучения и самостоятельности</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-form">
+        <h2>Свяжитесь с нами</h2>
+        <form action="contact.php" method="post">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Номер телефона:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          <label for="message">Ваше сообщение:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>© 2025 Детская школа «ЭВРИКА»</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
