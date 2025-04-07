@@ -1,1 +1,139 @@
-<!-- Evrika school project with full design, animations, parallax, and contact form -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Детская школа «ЭВРИКА»</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <!-- Прелоадер -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Фиксированное навигационное меню -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-wrap" data-aos="zoom-in">
+        <img src="img/logo.png" alt="Логотип ЭВРИКА" class="logo-img"/>
+        <span class="logo-text">ЭВРИКА</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="#approach">Подход</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Параллакс-шапка -->
+  <header class="parallax" id="header">
+    <div class="overlay"></div>
+    <div class="header-content" data-aos="fade-up">
+      <h1>Детская школа «ЭВРИКА»</h1>
+      <p>Каждый день — новое открытие</p>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <div class="container main-content">
+    <!-- Преимущества школы -->
+    <section id="advantages" data-aos="fade-up">
+      <h2>Почему «ЭВРИКА» — выбор успешных родителей?</h2>
+      <div class="benefits">
+        <div class="benefit-item" data-aos="fade-right">
+          <h3>Прозрачность и качество</h3>
+          <ul>
+            <li>Четкие критерии оценки для родителей</li>
+            <li>Домашние задания для лучшего усвоения знаний</li>
+          </ul>
+          <img src="img/children1.jpg" alt="Дети учатся" class="benefit-img"/>
+        </div>
+        <div class="benefit-item" data-aos="fade-left">
+          <h3>Безопасность и забота</h3>
+          <ul>
+            <li>Отсутствие ненужных экспериментов</li>
+            <li>Соблюдение санитарных норм</li>
+          </ul>
+          <img src="img/children2.jpg" alt="Здоровье детей" class="benefit-img"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Комплексный подход -->
+    <section id="approach" data-aos="fade-up">
+      <h2>Наш комплексный подход</h2>
+      <div class="benefits">
+        <div class="benefit-item" data-aos="fade-right">
+          <h3>Образование</h3>
+          <ul>
+            <li>Классическая программа по стандартам РФ</li>
+            <li>5 часов иностранного языка в неделю</li>
+            <li>Онлайн-занятия в реальном времени</li>
+            <li>Блочно-модульная система с проектной деятельностью</li>
+          </ul>
+          <img src="img/children3.jpg" alt="Дети изучают" class="benefit-img"/>
+        </div>
+        <div class="benefit-item" data-aos="fade-left">
+          <h3>Здоровье</h3>
+          <ul>
+            <li>Ежедневная зарядка перед занятиями</li>
+            <li>Физическая активность с уроками на английском</li>
+          </ul>
+        </div>
+        <div class="benefit-item" data-aos="fade-left">
+          <h3>Экспертность</h3>
+          <ul>
+            <li>Опытные педагоги с уникальными методиками</li>
+          </ul>
+        </div>
+        <div class="benefit-item" data-aos="fade-left">
+          <h3>Развитие личности</h3>
+          <ul>
+            <li>Формирование личности ребенка</li>
+            <li>Развитие навыков обучения и самостоятельности</li>
+            <li>Воспитание ответственности и инициативности</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактная форма -->
+    <section id="contact" data-aos="fade-up">
+      <div class="contact-form">
+        <h2>Свяжитесь с нами</h2>
+        <form action="https://formspree.io/f/movepnpj" method="POST">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Введите имя" required>
+          <label for="email">Ваш email:</label>
+          <input type="email" id="email" name="email" placeholder="Введите email" required>
+          <label for="message">Ваше сообщение:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Введите сообщение" required></textarea>
+          <button type="submit">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Детская школа «ЭВРИКА». Каждый день — новое открытие.</p>
+  </footer>
+
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Наш JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
